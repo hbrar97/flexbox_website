@@ -58,7 +58,7 @@ section {
   padding: 2.5rem;
   font-family: "Jacques Francois Shadow", cursive;
   text-align: center;
-  text-transform: lowercase;
+  text-transform: capitalize;
 }
 
 .content {
@@ -75,11 +75,11 @@ section {
 }
 
 #mission .image-container {
-  background-image: url(../images/mission.jpg);
+  background-image: url(../peoples/bw_football_stadium.jpg);
 }
 
 #team .image-container {
-  background-image: url(../images/team.jpg);
+  background-image: url(../peoples/football_pitch_line.jpg);
 }
 
 .label {
@@ -116,12 +116,15 @@ nav .logo{
 nav .logo a #logo {
   width: 12.5rem;
   height: 3.125rem;
-  background-image: url("../images/logo1.png");
-  background-size: cover;
+  background-image: url("../peoples/logo1.png");
+  background-repeat: no-repeat;
+  background-size: 200px 50px;
   transition: 0.4s all linear 0.2s;
 }
 nav .logo a #logo:hover {
   background-image: url("../images/logo2.png");
+  background-repeat: no-repeat;
+  background-size: 200px 50px;
   transition: 0.4s all linear 0.2s;
 }
 nav .links ul,
@@ -165,3 +168,226 @@ nav .icons ul{
 nav .icons ul li {
   margin: 0 0.75rem;
 }
+
+/*Header*/
+.banner {
+  width: 100%;
+}
+.banner img {
+  height: auto;
+}
+
+/*Main statement */
+#mission .image-container {
+  height: 48rem;
+}
+#mission .image-container .content{
+  justify-content: center;
+  align-items: center;
+}
+#mission .image-container .content #mission-statement{
+  height: 24rem;
+  width: 75%;
+  flex-grow: 0;
+  flex-shrink: 1;
+  background-image: linear-gradient(215deg, rgba(255, 166, 0, 0.8), rgba(255, 166, 0, 0) 70%), linear-gradient(125deg, rgba(128, 0, 128, 0.8), rgba(128, 0, 128, 0) 70%), linear-gradient(335deg, rgba(0, 183, 255, 0.8), rgba(0, 183, 255, 0) 70%);
+  color: white;
+  padding: 1rem 10%;
+  text-align: center;
+  line-height: 1.2;
+  font-family: "Enriqueta", serif;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+/* Products */
+#offer .content {
+  width: 100%;
+  height: auto;
+  padding: 3rem 1.5rem;
+  background-color: #e5e5fa;
+  background-image: repeating-linear-gradient(45deg, rgba(81, 119, 3, 0.25) 0 1rem, transparent 1rem 2rem), repeating-linear-gradient(135deg, rgba(81, 119, 3, 0.25) 0 1rem, transparent 1rem 2rem);
+  background-attachment: fixed;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+#offer .content .product{
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(215deg, rgba(255, 166, 0, 0.8), rgba(255, 166, 0, 0) 70%), linear-gradient(125deg, rgba(128, 0, 128, 0.8), rgba(128, 0, 128, 0) 70%), linear-gradient(335deg, rgba(0, 183, 255, 0.8), rgba(0, 183, 255, 0) 70%);
+  opacity: 1;
+  padding: 1.5rem;
+  margin: 1rem;
+}
+#offer .content .product .pic {
+  width: 18.75rem;
+}
+#offer .content .product .label h4 {
+  font-family: "Enriqueta", serif;
+  text-transform: capitalize;
+}
+/* Team */
+#team{
+  margin-bottom: 0;
+}
+#team .image-container .content{
+  padding: 3rem 1.5rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+#team .image-container .content .team-member {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: default;
+  align-items: default;
+  width: 18.75rem;
+}
+#team .image-container .content .team-member .mugshot {
+  display: flex;
+  flex-direction: default;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 28.125rem;
+  /* background-image: linear-gradient(360deg, rgba(255, 166, 0, 0.8), rgba(255, 166, 0, 0) 70%), linear-gradient(125deg, rgba(128, 0, 128, 0.8), rgba(128, 0, 128, 0) 70%), linear-gradient(335deg, rgba(0, 183, 255, 0.8), rgba(0, 183, 255, 0) 70%); */
+  background-color: black;
+  margin-bottom: 1rem;
+}
+#team .image-container .content .team-member .mugshot img {
+  width: 97.33%;
+  height: 97.33%;
+}
+#team .image-container .content .team-member .label h3 {
+  font-family: "Enriqueta", serif;
+  line-height: 2;
+}
+#team .image-container .content .team-member .label p {
+  font-family: "Kanit", sans-serif;
+  line-height: 1.2;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+/*Footer*/
+footer{
+  width: 100%;
+  background-color: #e5e5fa;
+  background-image: repeating-linear-gradient(45deg, rgba(81, 119, 3, 0.25) 0 1rem, transparent 1rem 2rem), repeating-linear-gradient(135deg, rgba(81, 119, 3, 0.25) 0 1rem, transparent 1rem 2rem);
+}
+footer .background{
+  background-color: rgba(245, 245, 245, 0.1);
+  padding: 3rem 1.5rem;
+}
+footer .background h2{
+  font-family: "Jacques Francois Shadow", cursive;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: black;
+  text-align: center;
+}
+footer .background p {
+  font-family: "Kanit", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  text-shadow: 0.125rem 0.125rem 0.5rem gray;
+}
+footer .background h5 {
+  font-family: "Kanit", sans-serif;
+  font-size: 0.625rem;
+  font-weight: 300;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  text-shadow: 0.125rem 0.125rem 0.5rem gray;
+}
+footer .background h5 #unsplash {
+  text-decoration: underline;
+}
+/*Media queries*/
+@media only screen and (min-width: 841px) and (max-width: 960px) {
+  html {
+    font-size: 14px;
+  }
+
+  * {
+    scroll-padding-top: 4rem;
+  }
+}
+@media only screen and (min-width: 721px) and (max-width: 840px) {
+  html {
+    font-size: 12px;
+  }
+
+  * {
+    scroll-padding-top: 3.5rem;
+  }
+}
+@media only screen and (min-width: 661px) and (max-width: 720px) {
+  html {
+    font-size: 11px;
+  }
+
+  * {
+    scroll-padding-top: 3rem;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 660px) {
+  html {
+    font-size: 10px;
+  }
+
+  * {
+    scroll-padding-top: 2.5rem;
+  }
+}
+@media only screen and (min-width: 491px) and (max-width: 540px) {
+  html {
+    font-size: 9px;
+  }
+
+  * {
+    scroll-padding-top: 2rem;
+  }
+}
+@media only screen and (max-width: 490px) {
+  html {
+    font-size: 8px;
+  }
+
+  * {
+    scroll-padding-top: 0;
+  }
+
+  #mission,
+#offer,
+#team {
+    padding-top: 1.75rem;
+    margin: 3rem auto 0 auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header {
+    position: relative;
+    top: 4.475rem;
+  }
+
+  .image-container {
+    background-attachment: scroll;
+  }
+
+  #mission .image-container .content #mission-statement {
+    width: 100%;
+    height: 48rem;
+    padding: 15rem 10%;
+    color: white;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
